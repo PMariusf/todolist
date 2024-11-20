@@ -94,7 +94,7 @@ ul li:hover {
 
 
 ul li.checked {
-  background: #888;
+  background: #1b1818;
   color: #fff;
   text-decoration: line-through;
 }
@@ -128,7 +128,7 @@ ul li.checked::before {
 
 
 .header {
-  background-color: #47377f;
+  background-color: #575361;
   padding: 30px 40px;
   color: white;
   text-align: center;
@@ -156,7 +156,7 @@ input {
 .addBtn {
   padding: 10px;
   width: 25%;
-  background: #d9d9d9;
+  background: #c1bdbd;
   color: rgb(75, 36, 36);
   float: left;
   text-align: center;
