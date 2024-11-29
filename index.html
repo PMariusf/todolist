@@ -9,31 +9,24 @@
     <script type="module" src="script.js"></script>
   </head>
   <header>
-    
+    <!--If Navbar-->
   </header>
   <body>
- 
-  
-<div id="myDIV" class="header">
-  <h2 style="margin:5px">My To Do List</h2>
-  <input type="text" id="myInput" placeholder="Add new todo..">
-  <span onclick="newElement()" class="addBtn">Add</span>
-</div>
-<nav>
-    
-  <ul id="myUL">
-    <li>Hit the gym</li>
-    <li class="checked">Pay bills</li>
-    <li>Meet George</li>
-    <li>Buy eggs</li>
-    <li>Read a book</li>
-    <li>Organize office</li>
-  </ul>
-      </nav>
-
-
-  
- <script src="sheet.js"></script>
+      <div id="myDiv" class="header">
+      <h2>Daily To Do List</h2>
+      <input type="text" id="myInput" placeholder="Title...">
+      <!-- Changed the span to a button with id="addBtn" -->
+      <button id="addBtn" class="addBtn">Add</button>
+    </div>
+    <ul id="myList">
+      <li>Morning meeting</li>
+      <li>Prep objectives for the day</li>
+      <li>Deliver assignments</li>
+      <li>Pick up the kids</li>
+      <li>Chores at home</li>
+      <li>Hit the Gym</li>
+    </ul>
+          <script src="sheet.js"></script>
  <!--<script src="javatime.js"></script>-->
   </body>
     <main>
