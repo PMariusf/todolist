@@ -1,5 +1,4 @@
 
-// Updated javascript with Const and let//
 
 // Create "close" buttons for existing list items
 const myNodelist = document.getElementsByTagName("LI");
@@ -70,3 +69,4 @@ input.addEventListener('keydown', function (event) {
    newElement(); // Call the same function as button click
   }
 })
+
