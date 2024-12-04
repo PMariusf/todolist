@@ -1,5 +1,4 @@
 
-
 // Create "close" buttons for existing list items
 const myNodelist = document.getElementsByTagName("LI");
 for (let i = 0; i < myNodelist.length; i++) {//

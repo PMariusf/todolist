@@ -12,15 +12,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #8d8787; /* Light background for contrast */
+  background-color: #bbb8b8; /* Light background for contrast */
 }
 
 /* To-do list wrapper with border and padding */
 .todo-wrapper {
   width: 100%;
   max-width: 400px; /* Limit the max width */
-  background: white;
-  border: 5px solid #3f2fa4;
+  background: rgb(229, 227, 227);
+  border: 7px solid #686489;
   border-radius: 20px 75px 20px 20px;
   box-shadow: 9px 25px 15px rgba(62, 16, 16, 0.1);
   padding: 20px;
@@ -28,12 +28,13 @@
 
 /* Header styling */
 .header {
-  background-color: #f44336;
+  background-color: #eb1000;
   padding: 20px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   font-size:  24px;
-  border-radius: 6px 56px 0 0;
+  border-radius: 12px 56px 0 0;
+  border: solid 5px rgb(220, 161, 163);
 }
 
 /* Clear floats after the header */
@@ -54,15 +55,15 @@
 input {
   flex: 1;
   padding: 10px;
-  font-size: 16px;
-  border: 5px solid #ccc;
+  font-size: 18px;
+  border: 5px solid #d7d1d1;
   border-right: none;
   outline: none;
   border-radius: 16px 0 0 6px;
 }
 
 input:focus {
-  border-color: #f44336;
+  border-color: #d3d3d3;
 }
 
 /* Style the "Add" button */
@@ -79,7 +80,7 @@ input:focus {
 }
 
 .addBtn:hover {
-  background-color: #bbb;
+  background-color: #b1adad;
 }
 
 
@@ -112,15 +113,15 @@ ul li:hover {
 }
 
 ul li.checked {
-  background: #888;
-  color: white;
-  text-decoration: line-through;
+  background: #b5b1b1;
+  color: rgb(20, 20, 20);
+  text-decoration: line-through 2px;
 }
 
 ul li.checked::before {
   content: '';
   position: absolute;
-  border-color: white;
+  border-color: rgb(70, 63, 63);
   border-style: solid;
   border-width: 0 2px 2px 0;
   top: 10px;
