@@ -15,8 +15,9 @@ function addCloseFunctionality() {
     if (!closeButtons[i].hasCloseHandler) {
       closeButtons[i].onclick = function () {
         const li = this.parentElement;
+        const task = li.textContent.replace("\u00D7", "").trim(); // Get task text without the "×"
         li.style.display = "none"; // Hide the list item
-        removeTaskFromStorage(li.textContent); // Remove from localStorage
+        removeTaskFromStorage(task); // Remove the task from localStorage
       };
       closeButtons[i].hasCloseHandler = true;
     }
@@ -59,8 +60,8 @@ function saveTaskToStorage(task) {
 // Remove task from localStorage
 function removeTaskFromStorage(task) {
   let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-  tasks = tasks.filter(t => t !== task);
-  localStorage.setItem('tasks', JSON.stringify(tasks));
+  tasks = tasks.filter(t => t !== task); // Remove the task from the array
+  localStorage.setItem('tasks', JSON.stringify(tasks)); // Save the updated array back to localStorage
 }
 
 // Load tasks from localStorage
