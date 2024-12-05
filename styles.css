@@ -247,7 +247,36 @@ ul li.checked::before {
   margin: 0;
   padding: 0;
 }
+.neonCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%; /* Makes the container a circle */
+  background-color: #6e4444; /* Dark background for the circle */
+  border: 2px solid #0ff; /* Neon blue border */
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff, 0 0 80px #0ff;
+  animation: neonPulse 1.5s ease-in-out infinite alternate;
+}
 
+.headerLogo {
+  color: #fff; /* White text color */
+  font-size: 28px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+@keyframes neonPulse {
+  0% {
+      box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+  }
+  100% {
+      box-shadow: 0 0 30px #0ff, 0 0 50px #0ff, 0 0 80px #0ff;
+  }
+}
+/*
 .overlaytwo {
   background-image: url('Polygon.png');
   background-repeat: no-repeat;
@@ -260,7 +289,7 @@ ul li.checked::before {
   right: 0;
   bottom: 0;
   opacity: 0.5; /* Set transparency for the background image */
-  z-index: -1;
+ /* z-index: -1;
   transform: rotateY(3.142rad);
   background-size: cover;
 }
@@ -277,7 +306,7 @@ ul li.checked::before {
   right: 0;
   bottom: 0;
   opacity: 0.5; /* Set transparency for the background image */
-  z-index: -1;
+ /* z-index: -1;
   background-size: cover;
 }
 
