@@ -4,7 +4,45 @@
   margin: 0;
   padding: 0;
 }
-
+/*.body{
+  background-image: url("tattoo.jpg");
+ background-color: #cccccc;
+}*/
+.overlaytwo{
+background-image: url('Polygon.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5; /* Set transparency for the background image */
+  z-index: -1;
+  transform: rotateY(3.142rad);*/
+  
+}
+.overlay {
+  background-image: url('Polygon\ 2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5; /* Set transparency for the background image */
+  z-index: -1;
+  
+}
 /* Centering container */
 .container {
   width: 100%;
@@ -12,7 +50,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #bbb8b8; /* Light background for contrast */
+  /*background-color: #f8f7f7; /* Light background for contrast */
 }
 
 
