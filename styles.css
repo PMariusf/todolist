@@ -262,12 +262,13 @@ ul li.checked::before {
   opacity: 0.5; /* Set transparency for the background image */
   z-index: -1;
   transform: rotateY(3.142rad);
+  background-size: cover;
 }
 
 .overlay {
   background-image: url('Polygon 2.png');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment:fixed;
   background-position: center;
   font-family: Arial, sans-serif;
   position: absolute;
@@ -277,6 +278,7 @@ ul li.checked::before {
   bottom: 0;
   opacity: 0.5; /* Set transparency for the background image */
   z-index: -1;
+  background-size: cover;
 }
 
 /* Centering container */
