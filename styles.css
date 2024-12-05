@@ -1,4 +1,6 @@
 
+
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -77,7 +79,7 @@ body{
   padding: 20px;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 24px;
+  font-size: 34px;
   font-family: "Caveat", cursive;
   border-radius: 12px 56px 0 0;
   border: solid 5px rgb(220, 161, 163);
@@ -102,7 +104,7 @@ input {
   flex: 1;
   padding: 10px;
   font-family: "Caveat", cursive;
-  font-size: 18px;
+  font-size: 28px;
   border: 5px solid #d7d1d1;
   border-right: none;
   outline: none;
