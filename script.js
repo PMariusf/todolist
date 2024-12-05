@@ -93,3 +93,33 @@ input.addEventListener('keydown', function (event) {
 
 // Load tasks when the page is loaded
 window.onload = loadTasksFromStorage;
+
+
+
+
+// Generate snowflakes on the screen
+const snowflakesContainer = document.getElementById("snowflakes");
+
+function createSnowflake() {
+  const snowflake = document.createElement("div");
+  snowflake.classList.add("snowflake");
+  
+  // Set a random position and size for the snowflake
+  snowflake.style.left = `${Math.random() * window.innerWidth}px`;
+  snowflake.style.fontSize = `${Math.random() * 10 + 10}px`; // Random size between 10px and 20px
+  snowflake.style.animationDuration = `${Math.random() * 3 + 2}s`; // Random fall time between 2s and 5s
+  
+  // Add snowflake character (you can use other symbols if you prefer)
+  snowflake.textContent = "❄️";
+  
+  // Append snowflake to the container
+  snowflakesContainer.appendChild(snowflake);
+  
+  // Remove the snowflake when it reaches the bottom
+  setTimeout(() => {
+    snowflake.remove();
+  }, parseFloat(snowflake.style.animationDuration) * 1000);
+}
+
+// Create snowflakes every 100ms
+setInterval(createSnowflake, 100);
