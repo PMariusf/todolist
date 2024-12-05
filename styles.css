@@ -246,6 +246,12 @@ ul li.checked::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  color: #0b0a0a;
+}
+body{
+  overflow: hidden;
+  background-color: #292929;
 }
 .neonCircle {
   display: flex;
@@ -254,7 +260,7 @@ ul li.checked::before {
   width: 55px;
   height: 55px;
   border-radius: 50%; /* Makes the container a circle */
-  background-color: #f9f9f9; /* Dark background for the circle */
+  /*background-color: #cccccc; /* Dark background for the circle */
   border: 2px solid #0ff; /* Neon blue border */
   box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff, 0 0 80px #0ff;
   animation: neonPulse 1.5s ease-in-out infinite alternate;
@@ -270,11 +276,20 @@ ul li.checked::before {
 
 @keyframes neonPulse {
   0% {
-      box-shadow: 0 0 20px rgb(4, 0, 255), 0 0 40px #0ff, 0 0 60px #0ff;
-  }
-  100% {
-      box-shadow: 0 0 30px #0ff, 0 0 50px #0ff, 0 0 80px #0ff;
-  }
+    box-shadow: 0 0 20px #ff0066, 0 0 40px #ff0066, 0 0 60px #ff0066, 0 0 80px #ff0066;
+}
+25% {
+    box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 60px #00ff00, 0 0 80px #00ff00;
+}
+50% {
+    box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff, 0 0 60px #00ccff, 0 0 80px #00ccff;
+}
+75% {
+    box-shadow: 0 0 20px #ffcc00, 0 0 40px #ffcc00, 0 0 60px #ffcc00, 0 0 80px #ffcc00;
+}
+100% {
+    box-shadow: 0 0 20px #ff0066, 0 0 40px #ff0066, 0 0 60px #ff0066, 0 0 80px #ff0066;
+}
 }
 /*
 .overlaytwo {
@@ -329,6 +344,7 @@ ul li.checked::before {
   box-shadow: 9px 25px 15px rgba(62, 16, 16, 0.1);
   padding: 20px;
   box-sizing: border-box;
+  font-family: "Caveat", cursive;
 }
 
 /* Header styling */
@@ -338,6 +354,7 @@ ul li.checked::before {
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 24px;
+  font-family: "Caveat", cursive;
   border-radius: 12px 56px 0 0;
   border: solid 5px rgb(220, 161, 163);
 }
@@ -360,6 +377,7 @@ ul li.checked::before {
 input {
   flex: 1;
   padding: 10px;
+  font-family: "Caveat", cursive;
   font-size: 18px;
   border: 5px solid #d7d1d1;
   border-right: none;
@@ -499,7 +517,7 @@ ul li.checked::before {
 }
 
 /* Snowflakes CSS */
-.snowflake {
+/*.snowflake {
   position: absolute;
   top: -10px;
   z-index: 9999;
@@ -517,5 +535,145 @@ ul li.checked::before {
   100% {
     top: 100vh;
     opacity: 0;
+  }
+}*/
+.snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  opacity: 0;
+  animation: fall 5s linear infinite, snowflakeColorChange 4s ease-in-out infinite;
+  font-size: 2rem; /* Use relative units for better responsiveness */
+  color: #ff0066; /* Neon pink color */
+  text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066;
+}
+
+/* Neon snowflake color variations */
+@keyframes snowflakeColorChange {
+  0% {
+      color: #ff0066; /* Neon pink */
+      text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066;
+  }
+  25% {
+      color: #00ff00; /* Neon green */
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+  }
+  50% {
+      color: #00ccff; /* Neon blue */
+      text-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff, 0 0 30px #00ccff;
+  }
+  75% {
+      color: #ffcc00; /* Neon yellow */
+      text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffcc00, 0 0 30px #ffcc00;
+  }
+  100% {
+      color: #ff0066; /* Neon pink */
+      text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066;
+  }
+}
+
+@keyframes fall {
+  0% {
+      transform: translateY(-10px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(100vh);
+      opacity: 1;
+  }
+}
+
+/* Create multiple snowflakes */
+.snowflake:nth-child(1) {
+  left: 10%;
+  animation: fall 6s linear infinite, snowflakeColorChange 4s ease-in-out infinite;
+  font-size: 3rem;
+}
+
+.snowflake:nth-child(2) {
+  left: 30%;
+  animation: fall 7s linear infinite, snowflakeColorChange 4.5s ease-in-out infinite;
+  font-size: 2.5rem;
+}
+
+.snowflake:nth-child(3) {
+  left: 50%;
+  animation: fall 5s linear infinite, snowflakeColorChange 3.5s ease-in-out infinite;
+  font-size: 2rem;
+}
+
+.snowflake:nth-child(4) {
+  left: 70%;
+  animation: fall 6.5s linear infinite, snowflakeColorChange 4s ease-in-out infinite;
+  font-size: 3rem;
+}
+
+.snowflake:nth-child(5) {
+  left: 90%;
+  animation: fall 8s linear infinite, snowflakeColorChange 4.2s ease-in-out infinite;
+  font-size: 2rem;
+}
+
+.snowflake:nth-child(6) {
+  left: 15%;
+  animation: fall 7s linear infinite, snowflakeColorChange 3.8s ease-in-out infinite;
+  font-size: 2.8rem;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .snowflake {
+      font-size: 1.5rem; /* Smaller snowflakes on tablets */
+  }
+  .snowflake:nth-child(1) {
+      font-size: 2.5rem;
+  }
+  .snowflake:nth-child(2) {
+      font-size: 2rem;
+  }
+  .snowflake:nth-child(3) {
+      font-size: 1.8rem;
+  }
+  .snowflake:nth-child(4) {
+      font-size: 2.5rem;
+  }
+  .snowflake:nth-child(5) {
+      font-size: 1.6rem;
+  }
+  .snowflake:nth-child(6) {
+      font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .snowflake {
+      font-size: 1rem; /* Smaller snowflakes on mobile */
+  }
+  .snowflake:nth-child(1) {
+      font-size: 1.8rem;
+  }
+  .snowflake:nth-child(2) {
+      font-size: 1.5rem;
+  }
+  .snowflake:nth-child(3) {
+      font-size: 1.2rem;
+  }
+  .snowflake:nth-child(4) {
+      font-size: 1.8rem;
+  }
+  .snowflake:nth-child(5) {
+      font-size: 1.3rem;
+  }
+  .snowflake:nth-child(6) {
+      font-size: 1.5rem;
   }
 }
