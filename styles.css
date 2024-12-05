@@ -251,26 +251,26 @@ ul li.checked::before {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%; /* Makes the container a circle */
-  background-color: #6e4444; /* Dark background for the circle */
+  background-color: #f9f9f9; /* Dark background for the circle */
   border: 2px solid #0ff; /* Neon blue border */
   box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff, 0 0 80px #0ff;
   animation: neonPulse 1.5s ease-in-out infinite alternate;
 }
 
 .headerLogo {
-  color: #fff; /* White text color */
+  color: #d00101; /* White text color */
   font-size: 28px;
   font-weight: bold;
-  font-family: Arial, sans-serif;
+  font-family: "Edu AU VIC WA NT Arrows", cursive;
   text-align: center;
 }
 
 @keyframes neonPulse {
   0% {
-      box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+      box-shadow: 0 0 20px rgb(4, 0, 255), 0 0 40px #0ff, 0 0 60px #0ff;
   }
   100% {
       box-shadow: 0 0 30px #0ff, 0 0 50px #0ff, 0 0 80px #0ff;
