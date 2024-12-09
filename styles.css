@@ -52,11 +52,11 @@ body{
 /* Centering container */
 .container {
   width: 100%;
-  height: 100vh; /* Full viewport height */
+  height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
-  border: flicker;
+  
 }
 
 /* To-do list wrapper with border and padding */
@@ -64,7 +64,7 @@ body{
   height: auto;
   width: 100%;
   max-width: 430px; 
-  background: rgb(229, 227, 227);
+  background: rgb(218, 176, 176);
   border: 7px solid #686489;
   border-radius: 20px 75px 20px 20px;
   box-shadow: 9px 25px 15px rgba(62, 16, 16, 0.1);
