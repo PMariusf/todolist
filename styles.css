@@ -91,6 +91,7 @@
   display: flex;
   width: 100%;
   margin: 10px 0;
+  
 }
 
 /* Style the input */
@@ -103,6 +104,12 @@ input {
   border-right: none;
   outline: none;
   border-radius: 16px 0 0 6px;
+  display: flex;
+  width: 100%;
+  align-items: center; /* Ensures proper alignment */
+ 
+  
+  
 }
 
 input:focus {
@@ -120,6 +127,8 @@ input:focus {
   cursor: pointer;
   transition: 0.3s;
   border-radius: 0 6px 6px 0;
+  flex-shrink: 0; /* Prevents the button from shrinking */
+  max-width: 150px; /* Optional: set max width for button */
 }
 
 .addBtn:hover {
