@@ -64,7 +64,7 @@ body{
   height: auto;
   width: 100%;
   max-width: 430px; 
-  background: rgb(218, 176, 176);
+  background: rgb(232, 208, 208);
   border: 7px solid #686489;
   border-radius: 20px 75px 20px 20px;
   box-shadow: 9px 25px 15px rgba(62, 16, 16, 0.1);
@@ -75,14 +75,14 @@ body{
 }
 /* Header styling */
 .header {
-  background-color: #eb1000;
+  background-color: #e91000;
   padding: 20px;
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 34px;
   font-family: "Caveat", cursive;
   border-radius: 12px 56px 0 0;
-  border: solid 5px rgb(220, 161, 163);
+  border: solid 5px rgb(116, 0, 4);
 }
 
 /* Clear floats after the header */
