@@ -56,6 +56,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  border: flicker;
 }
 
 /* To-do list wrapper with border and padding */
@@ -69,8 +70,8 @@ body{
   padding: 20px;
   box-sizing: border-box;
   font-family: "Caveat", cursive;
+  
 }
-
 /* Header styling */
 .header {
   background-color: #eb1000;
@@ -176,7 +177,7 @@ ul li.checked {
 ul li.checked::before {
   content: '';
   position: absolute;
-  border-color: rgb(70, 63, 63);
+  border-color: rgb(0, 0, 0);
   border-style: solid;
   border-width: 0 2px 2px 0;
   top: 10px;
@@ -184,6 +185,7 @@ ul li.checked::before {
   transform: rotate(45deg);
   height: 15px;
   width: 7px;
+  transition: opacity 0.3s ease-in-out; /* Smooth fade-in */
 }
 
 /* Style the close button */
@@ -264,7 +266,7 @@ ul li.checked::before {
   position: absolute;
   top: -10px;
   opacity: 0;
-  animation: fall 5s linear infinite, snowflakeColorChange 4s ease-in-out infinite;
+  animation: fall 7s linear infinite, snowflakeColorChange 3s ease-in-out infinite;
   font-size: 2rem; /* Use relative units for better responsiveness */
   color: #ff0066; /* Neon pink color */
   text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066;
