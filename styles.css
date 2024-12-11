@@ -81,9 +81,9 @@
   }
 
   .info-text {
-    left: -100px; /* Adjust position of the info box for small screens */
-    width: 160px; /* Further reduce the width for mobile */
-    font-size: 12px; /* Smaller font size for mobile */
+    left: -100px; 
+    width: 160px; 
+    font-size: 12px; 
   }
 }
 
@@ -94,16 +94,16 @@ body{
 }
 
 .neonCircle {
-  
+  margin-left: ;
   padding: 10px 15px 10px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 25px;
   height: 35px;
-  border-radius: 50%; /* Makes the container a circle */
+  border-radius: 50%; 
   /*background-color: #cccccc; /* Dark background for the circle */
-  border: 2px solid rgb(99, 218, 231); /* Neon blue border */
+  border: 2px solid rgb(99, 218, 231); 
   box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff, 0 0 80px #0ff;
   animation: neonPulse 1.5s ease-in-out infinite alternate;
 }
@@ -114,6 +114,7 @@ body{
   font-weight: bold;
   font-family: "Edu AU VIC WA NT Arrows", cursive;
   text-align: center;
+  margin-left: 40px;
  
 }
 
@@ -219,8 +220,8 @@ input:focus {
   cursor: pointer;
   transition: 0.3s;
   border-radius: 0 6px 6px 0;
-  flex-shrink: 0; /* Prevents the button from shrinking */
-  max-width: 150px; /* Optional: set max width for button */
+  flex-shrink: 0; 
+  max-width: 150px; 
 }
 
 .addBtn:hover {
@@ -300,13 +301,18 @@ ul li.checked::before {
     font-size: 16px;
     padding: 10px 8px 10px 30px;
   }
+
+    /* keepcheckmark to the left or adjust position,
+     prevent overlap*/
   ul li.checked::before {
-    /* keepcheckmark to the left or adjust position, removes overlap*/
+  
     left: 8px; 
     top: 8px;  
     height: 12px; 
     width: 6px;  
   }
+
+  
   input,
   .addBtn {
     font-size: 14px;
