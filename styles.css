@@ -312,7 +312,7 @@ ul li.checked::before {
     width: 6px;  
   }
 
-  
+
   input,
   .addBtn {
     font-size: 14px;
@@ -367,8 +367,8 @@ ul li.checked::before {
   top: -10px;
   opacity: 0;
   animation: fall 7s linear infinite, snowflakeColorChange 3s ease-in-out infinite;
-  font-size: 2rem; /* Use relative units for better responsiveness */
-  color: #ff0066; /* Neon pink color */
+  font-size: 3rem; /* Use relative units for better responsiveness */
+  color: #ff0066; 
   text-shadow: 0 0 10px #ff0066, 0 0 20px #ff0066, 0 0 30px #ff0066;
 }
 
@@ -410,7 +410,7 @@ ul li.checked::before {
 /* Create multiple snowflakes */
 .snowflake:nth-child(1) {
   left: 10%;
-  animation: fall 6s linear infinite, snowflakeColorChange 4s ease-in-out infinite;
+  animation: fall 7s linear infinite, snowflakeColorChange 4s ease-in-out infinite;
   font-size: 3rem;
 }
 
@@ -492,30 +492,7 @@ ul li.checked::before {
       font-size: 1.5rem;
   }
 }
-/* Glittering Stars */
-.stars {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  z-index: -1;
-  pointer-events: none;
-  animation: glitter 1.5s infinite;
-}
 
-@keyframes glitter {
-  0% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 0.2;
-  }
-}
 .footer {
   background-color: #333; 
   color: white; 
