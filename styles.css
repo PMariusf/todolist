@@ -23,32 +23,32 @@
 /* Information Mark Icon */
 .info-mark {
   position: absolute;
-  top: 20px; /* Adjust position in header */
-  right: 20px; /* Right-aligned in the header */
+  top: 20px; 
+  right: 20px; 
   font-size: 20px;
   cursor: pointer;
-  color: #ff0066; /* Neon pink color for the info mark */
+  color: #ff0066;
   transition: color 0.3s ease;
 }
 
 /* Hover effect for the info mark */
 .info-mark:hover {
-  color: #00ccff; /* Change color on hover */
+  color: #00ccff; 
 }
 
 /* Information text box */
 .info-text {
-  display: none; /* Hidden by default */
-  background-color: rgba(0, 0, 0, 0.7); /* Dark background with transparency */
+  display: none; 
+  background-color: rgba(0, 0, 0, 0.7); 
   color: white;
   padding: 10px;
   border-radius: 10px;
   position: absolute;
-  top: 35px; /* Position the info box below the icon */
-  left: -150px; /* Adjust horizontal position */
+  top: 35px; 
+  left: -150px; 
   width: 200px;
   font-size: 14px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Shadow for better visibility */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); 
 }
 
 /* Show info text when hovering over the info mark */
@@ -61,23 +61,23 @@
 /* For tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .info-mark {
-    top: 15px; /* Adjust the top position for tablets */
-    right: 15px; /* Adjust the right position for tablets */
-    font-size: 18px; /* Smaller icon size for tablets */
+    top: 15px; 
+    right: 15px;
+    font-size: 18px; 
   }
 
   .info-text {
-    left: -120px; /* Adjust position of the info box for tablets */
-    width: 180px; /* Slightly smaller info box */
+    left: -120px; 
+    width: 180px; 
   }
 }
 
 /* For mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
   .info-mark {
-    top: 10px; /* Adjust the top position for small screens */
-    right: 10px; /* Adjust the right position for small screens */
-    font-size: 16px; /* Smaller icon size for mobile */
+    top: 10px; 
+    right: 10px; 
+    font-size: 16px; 
   }
 
   .info-text {
@@ -94,6 +94,7 @@ body{
 }
 
 .neonCircle {
+  
   padding: 10px 15px 10px 10px;
   display: flex;
   justify-content: center;
@@ -113,6 +114,7 @@ body{
   font-weight: bold;
   font-family: "Edu AU VIC WA NT Arrows", cursive;
   text-align: center;
+ 
 }
 
 @keyframes neonPulse {
