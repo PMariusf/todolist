@@ -55,7 +55,18 @@
 .info-mark:hover .info-text {
   display: block;
 }
+@media (max-width: 480px) {
+  .info-mark {
+    font-size: 16px; /* Smaller icon size for mobile */
+  }
 
+  .info-box {
+    width: 90%; /* Make the info box take up most of the screen width */
+    left: 5%; /* Center the info box with 5% margin on both sides */
+    font-size: 12px; /* Smaller font size for mobile */
+    top: 80px; /* Adjust vertical position for better spacing */
+  }
+}
 /* Media Queries for Responsiveness */
 
 /* For tablets (max-width: 768px) */
@@ -94,7 +105,7 @@ body{
 }
 
 .neonCircle {
-  margin-left: ;
+  margin-left:10px ;
   padding: 10px 15px 10px 10px;
   display: flex;
   justify-content: center;
